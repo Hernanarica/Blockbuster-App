@@ -1,0 +1,406 @@
+/* Display */
+.flex {
+	display: flex;
+}
+
+/* flex Direction */
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-row-reverse {
+	flex-direction: row-reverse
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-col-reverse {
+	flex-direction: column-reverse;
+}
+
+/* Wrap */
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+/* Aligns */
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
+
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+.justify-self-auto {
+	justify-self: auto;
+}
+
+.justify-self-start {
+	justify-self: start;
+}
+
+.justify-self-end {
+	justify-self: end;
+}
+
+.justify-self-center {
+	justify-self: center;
+}
+
+.justify-self-stretch {
+	justify-self: stretch;
+}
+
+.items-start {
+	align-items: flex-start;
+}
+
+.items-end {
+	align-items: flex-end;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.items-baseline {
+	align-items: baseline;
+}
+
+.items-stretch {
+	align-items: stretch;
+}
+
+.self-auto {
+	align-self: auto;
+}
+
+.self-start {
+	align-self: flex-start;
+}
+
+.self-end {
+	align-self: flex-end;
+}
+
+.self-center {
+	align-self: center;
+}
+
+.self-stretch {
+	align-self: stretch;
+}
+
+.self-baseline {
+	align-self: baseline;
+}
+
+/* Order */
+.order-1 {
+	order: 1;
+}
+
+.order-2 {
+	order: 2;
+}
+
+.order-3 {
+	order: 3;
+}
+
+.order-4 {
+	order: 4;
+}
+
+.order-5 {
+	order: 5;
+}
+
+.order-6 {
+	order: 6;
+}
+
+.order-7 {
+	order: 7;
+}
+
+.order-8 {
+	order: 8;
+}
+
+.order-9 {
+	order: 9;
+}
+
+.order-10 {
+	order: 10;
+}
+
+.order-11 {
+	order: 11;
+}
+
+.order-12 {
+	order: 12;
+}
+
+.order-first {
+	order: -9999;
+}
+
+.order-last {
+	order: 9999;
+}
+
+.order-none {
+	order: 0;
+}
+
+/* flex */
+.flex-1 {
+	flex: 1;
+}
+
+.flex-2 {
+	flex: 2;
+}
+
+.flex-3 {
+	flex: 3;
+}
+
+.flex-4 {
+	flex: 4;
+}
+
+.flex-5 {
+	flex: 5;
+}
+
+/* flex margin */
+.m-auto {
+	margin: auto;
+}
+
+.m-l-auto {
+	margin-left: auto;
+}
+
+.m-r-auto {
+	margin-right: auto;
+}
+
+.m-t-auto {
+	margin-top: auto;
+}
+
+.m-b-auto {
+	margin-bottom: auto;
+}
+
+/* Object fit */
+.object-contain {
+	object-fit: contain;
+}
+
+.object-cover {
+	object-fit: cover;
+}
+
+/* overflow */
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.overflow-x {
+	overflow-x: hidden;
+}
+
+.overflow-y {
+	overflow-y: hidden;
+}
+
+.overflow-x-scroll {
+	overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
+/* z-index */
+.z-0 {
+	z-index: 0;
+}
+
+.z-10 {
+	z-index: 10;
+}
+
+.z-20 {
+	z-index: 20;
+}
+
+.z-30 {
+	z-index: 30;
+}
+
+.z-40 {
+	z-index: 40;
+}
+
+.z-50 {
+	z-index: 50;
+}
+
+.z-auto {
+	z-index: auto;
+}
+
+/* width */
+.w-screen {
+	inline-size: 100vh;
+}
+
+.min-w-screen {
+	min-inline-size: 100vh;
+}
+
+.w-full {
+	inline-size: 100%;
+}
+
+.w-fit {
+	inline-size: fit-content;
+}
+
+/* height */
+.h-screen {
+	block-size: 100vh;
+}
+
+.min-h-screen {
+	min-block-size: 100vh;
+}
+
+.h-full {
+	block-size: 100%;
+}
+
+.h-fit {
+	block-size: fit-content;
+}
+
+/* text-align */
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+/* text-decoration */
+.no-decoration {
+	text-decoration: none;
+}
+
+.text-ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* vertical-align */
+.align-baseline {
+	vertical-align: baseline;
+}
+
+.align-top {
+	vertical-align: top;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
+
+.align-bottom {
+	vertical-align: bottom;
+}
+
+/* border-testing */
+.border-test {
+	border: 2px solid #000;
+}
+
+.border-test-1 {
+	border: 2px solid #E53935;
+}
+
+.border-test-2 {
+	border: 2px solid #D81B60;
+}
+
+.border-test-2 {
+	border: 2px solid #8E24AA;
+}
+
+.border-test-2 {
+	border: 2px solid #8E24AA;
+}
+
+.b-1 {
+	border-width: 1px;
+}
+
+.b-2 {
+	border-width: 2px;
+}
+
+.b-3 {
+	border-width: 3px;
+}
+
+.b-4 {
+	border-width: 4px;
+}
+
+/* pointer-events */
+.pointer-events-none {
+	pointer-events: none;
+}

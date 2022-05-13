@@ -31,6 +31,7 @@
 	overflow: hidden;
 	border-radius: 0.5rem;
 	outline: none;
+	margin-block-end: 1rem;
 }
 
 .film__item:focus {

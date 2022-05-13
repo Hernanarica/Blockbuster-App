@@ -1,15 +1,13 @@
-import Header from "./components/header/header";
-import Home from "./components/home/Home";
-import Footer from "./components/footer/footer";
+import AppRouter from "./router/AppRouter";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 function App() {
 	
 	return (
-		<>
-			<Header />
-			<Home />
-			<Footer />
-		</>
+		<Provider store={ store }>
+			<AppRouter />
+		</Provider>
 	);
 }
 
