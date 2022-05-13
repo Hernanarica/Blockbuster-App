@@ -14,9 +14,9 @@ function useFetch(url = '') {
 	
 	useEffect(() => {
 		getFetchData(url).then(r => {
-			setTimeout(() => {
+			// setTimeout(() => {
+			// }, 3000);
 			setState(oldState => oldState = { ...oldState, data: r, loading: false });
-			}, 3000);
 		}).catch(err => {
 			setState(oldState => oldState = { ...oldState, error: err });
 		});

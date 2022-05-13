@@ -23,6 +23,7 @@
 @import "./components/scroll-top.css";
 @import "components/titles.css";
 @import "components/search.css";
+@import "components/loader.css";
 
 /* sections files */
 @import "./sections/main-home.css";

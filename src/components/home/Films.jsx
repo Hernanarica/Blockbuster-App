@@ -1,6 +1,6 @@
-import { SpinnerCircular } from "spinners-react";
 import useFetch from "../../hooks/useFetch";
 import Film from "./Film";
+import Loader from "../utilities/Loader";
 
 function Films() {
 	const { data, loading } = useFetch(`${ import.meta.env.VITE_API_URL }?apikey=${ import.meta.env.VITE_API_KEY }&s=Naruto&plot=full`);
@@ -18,7 +18,7 @@ function Films() {
 			</section>
 			<div className="films-container">
 				{
-					loading && <SpinnerCircular size={ 100 } color="#fed941" />
+					loading && <Loader size={ 100 } />
 				}
 				{
 					films?.length > 0 && films.map(film => <Film { ...film } key={ film.imdbID } />)
