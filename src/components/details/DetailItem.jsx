@@ -1,4 +1,8 @@
+import Genres from "./Genres";
+
 function DetailItem({ Title, Plot, Runtime, Genre, Released, imdbRating, Poster }) {
+	const genres = Genre.replaceAll(' ', '').split(',');
+	
 	return (
 		<article className="detail__container">
 			<div className="detail__description-area-1">
@@ -13,9 +17,14 @@ function DetailItem({ Title, Plot, Runtime, Genre, Released, imdbRating, Poster 
 						<div className="detail__info">
 							<time dateTime="PT${data.Runtime.replace(' ', '').toUpperCase()}">{ Runtime ? Runtime : 'No disponible' }</time>
 							<div className="detail__genres">
-								<span className="badge badge--active">{ Genre ? Genre.replaceAll(',', ' - ') : 'No disponible' }</span>
+								{
+									genres.length === 0 && <span className="badge badge--active">No disponible</span>
+								}
+								{
+									genres.length > 0 && genres.map(genre => <Genres genre={ genre } key={ genre } />)
+								}
 							</div>
-							<time dateTime="${data.Released}">${ Released }</time>
+							<time dateTime="${data.Released}">{ Released }</time>
 						</div>
 					</div>
 				</div>
@@ -34,7 +43,7 @@ function DetailItem({ Title, Plot, Runtime, Genre, Released, imdbRating, Poster 
 				<div className="film__item" tabIndex="0" aria-label="Poster de la película">
 					<div className="film__rankin">
 						<i className="icon__star" aria-hidden="true"></i>
-						<span>${ imdbRating }</span>
+						<span>{ imdbRating }</span>
 					</div>
 					<img src={ Poster } alt={ Title } width="220" height="330" />
 				</div>

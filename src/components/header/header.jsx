@@ -1,3 +1,5 @@
+import getImagePath from "../../helpers/getImagePath";
+
 function Header() {
 	return (
 		<header className="header">
@@ -6,8 +8,8 @@ function Header() {
 					Blockbuster
 					<a href="/" aria-label="ir al home">
 						<picture className="header__title-image">
-							<source media="(min-width: 855px)" srcSet="./src/assets/imgs/logo-desk.png" />
-							<img src="./src/assets/imgs/logo-mob.png" alt="Blockbuster" width="214" height="128" />
+							<source media="(min-width: 855px)" srcSet={ getImagePath('logo-desk.png') } />
+							<img src={ getImagePath('logo-mob.png') } alt="Blockbuster" width="214" height="128" />
 						</picture>
 					</a>
 				</h1>

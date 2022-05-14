@@ -1,3 +1,5 @@
+import getImagePath from "../../helpers/getImagePath";
+
 function Footer() {
 	return (
 		<footer>
@@ -41,22 +43,22 @@ function Footer() {
 					<ul className="footer__social">
 						<li className="footer__social-item">
 							<a href="https://twitter.com" rel="noopener noreferrer" className="footer__social-link" target="_blank" aria-label="Ir a twitter">
-								<img src="./src/assets/imgs/icon__twitter.png" alt="Icon Twitter" width="48" height="48" />
+								<img src={ getImagePath('icon__twitter.png') } alt="Icon Twitter" width="48" height="48" />
 							</a>
 						</li>
 						<li className="footer__social-item">
 							<a href="https://www.facebook.com" rel="noopener noreferrer" className="footer__social-link" target="_blank" aria-label="Ir a facebook">
-								<img src="./src/assets/imgs/icon__facebook.png" alt="Icon Facebook" width="48" height="48" />
+								<img src={ getImagePath('icon__facebook.png') } alt="Icon Facebook" width="48" height="48" />
 							</a>
 						</li>
 						<li className="footer__social-item">
 							<a href="https://www.youtube.com" rel="noopener noreferrer" className="footer__social-link" target="_blank" aria-label="Ir a youtube">
-								<img src="./src/assets/imgs/icon__youtube.png" alt="Icon Youtube" width="48" height="48" />
+								<img src={ getImagePath('icon__youtube.png') } alt="Icon Youtube" width="48" height="48" />
 							</a>
 						</li>
 						<li className="footer__social-item">
 							<a href="https://www.instagram.com" rel="noopener noreferrer" className="footer__social-link" target="_blank" aria-label="Ir a instagram">
-								<img src="./src/assets/imgs/icon__instagram.png" alt="Icon Instagram" width="48" height="48" />
+								<img src={ getImagePath('icon__instagram.png') } alt="Icon Instagram" width="48" height="48" />
 							</a>
 						</li>
 					</ul>
