@@ -1,0 +1,10 @@
+.helps__text {
+	margin: 0;
+	font: var(--caption);
+	color: var(--white);
+}
+
+.helps__link {
+	color: var(--primary);
+	text-decoration: none;
+}

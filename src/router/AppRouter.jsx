@@ -9,9 +9,11 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 
 function AppRouter() {
+	const isAuthenticated = false;
+	
 	return (
 		<Router>
-			<Header />
+			<Header isAuthenticated={ isAuthenticated }/>
 			<main>
 				<Routes>
 					<Route path="/" element={ <HomeScreen /> } />

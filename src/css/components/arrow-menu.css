@@ -1,0 +1,14 @@
+.arrow {
+   display: none;
+   transition: 350ms;
+}
+
+@media screen and (min-width: 1279px) {
+   .arrow {
+      display: inline-block;
+      color: var(--primary);
+      transform: rotate(-90deg);
+      align-self: flex-end;
+      font-size: 1.4rem;
+   }
+}

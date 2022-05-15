@@ -24,6 +24,9 @@
 @import "components/titles.css";
 @import "components/search.css";
 @import "components/loader.css";
+@import "components/helps.css";
+@import "components/arrow-menu.css";
+@import "components/form.css";
 
 /* sections files */
 @import "./sections/main-home.css";
@@ -38,3 +41,5 @@
 @import "./sections/detail.css";
 @import "./sections/profile.css";
 @import "./sections/users.css";
+@import "./sections/not-found.css";
+@import "./sections/section-login.css";

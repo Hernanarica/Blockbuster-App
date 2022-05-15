@@ -1,0 +1,27 @@
+.btn-basic-container > *,
+.btn-intermediate-container > *,
+.btn-fan-plus-container > *,
+.btn-fan-container > * {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   max-block-size: 3rem;
+   block-size: 100%;
+   inline-size: 100%;
+   padding-inline: 1.5rem;
+   padding-block: 0.625rem;
+   border: 0.0625rem solid transparent;
+   border-radius: 0.25rem;
+   background-color: #efefef;
+   color: var(--black);
+   font: var(--button);
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.btn-fan-container > * {
+   border-color: var(--primary);
+   color: var(--primary);
+   background-color: var(--black);
+}

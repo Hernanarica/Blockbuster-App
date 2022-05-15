@@ -1,17 +1,17 @@
 @font-face {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     src: url(../../assets/fonts/Montserrat-Bold.ttf);
     font-weight: 700;
 }
 
 @font-face {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     src: url(../../assets/fonts/Montserrat-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     src: url(../../assets/fonts/Inter-Bold.ttf);
     font-weight: 700;
 }
