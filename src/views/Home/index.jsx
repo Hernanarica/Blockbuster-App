@@ -1,5 +1,5 @@
-import Films from "./Films";
-import Slider from "./Slider";
+import Films from "../../components/home/Films";
+import Slider from "../../components/home/Slider";
 
 function HomeScreen() {
 	return (

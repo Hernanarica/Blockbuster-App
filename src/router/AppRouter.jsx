@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomeScreen from "../components/home/HomeScreen";
-import LoginScreen from "../components/auth/LoginScreen";
-import RegisterScreen from "../components/auth/RegisterScreen";
+import HomeScreen from "../views/Home";
+import LoginScreen from "../views/Login/Login";
+import RegisterScreen from "../views/Register";
 import FavoritesScreen from "../components/favorites/FavoritesScreen";
 import OurPlansScreen from "../components/ourPlans/OurPlansScreen";
 import Details from "../components/details/Details";

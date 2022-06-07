@@ -1,10 +1,38 @@
 import { Link } from "react-router-dom";
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from "../../firebase/firebase.config";
 
 function RegisterScreen() {
+	const user = {
+		name: 'Hernan',
+		lastname: 'Arica',
+		email: 'hernommm@gmail.com',
+		password: 'asdf1234'
+	}
+	
+	const handleSubmit = e => {
+		e.preventDefault();
+		
+		const { email, password } = user;
+		createUserWithEmailAndPassword(auth, email, password)
+			.then((userCredential) => {
+				const user = userCredential.user;
+				console.log(user);
+			})
+			.catch((error) => {
+				const errorCode = error.code;
+				const errorMessage = error.message;
+			});
+		
+		console.log('registrando...');
+	};
+	
 	return (
 		<section className="wrapper register-section">
 			<h2 className="form__title">Registrate</h2>
-			<form action="" className="register__form">
+			<form className="register__form"
+			      onSubmit={ handleSubmit }
+			>
 				<div className="register__form-content">
 					<label htmlFor="name" className="register__form-field-title">Ingresa tu nombre</label>
 					<input type="text" name="name" className="register__form-field" id="name" placeholder="Ingresa tu nombre" />
