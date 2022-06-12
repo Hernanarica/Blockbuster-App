@@ -19,11 +19,11 @@ function RegisterScreen() {
 			.then(async (userCredential) => {
 				const { uid } = userCredential.user;
 				
-				updateProfile(auth.currentUser, {
-					displayName: `"{"name": "${ formValues.name }", "rol": "${ formValues.rol }"}"`
-				}).catch((error) => {
-					console.log(error);
-				});
+				// updateProfile(auth.currentUser, {
+				// 	displayName: `"{"name": "${ formValues.name }", "rol": "${ formValues.rol }"}"`
+				// }).catch((error) => {
+				// 	console.log(error);
+				// });
 				
 				await setDoc(doc(db, `usuarios/${ uid }`), {
 					...formValues

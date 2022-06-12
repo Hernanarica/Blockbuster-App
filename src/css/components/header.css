@@ -100,6 +100,7 @@
 
 .navigation__item {
 	list-style: none;
+	cursor: pointer;
 }
 
 .navigation__link {

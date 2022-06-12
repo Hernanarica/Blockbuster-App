@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavigationPublic from "./NavigationPublic";
 import NavigationAuth from "./NavigationAuth";
 
-function Header({ isAuthenticated }) {
+function Header({ authenticated }) {
 	return (
 		<header className="header">
 			<div className="header__wrapper wrapper">
@@ -22,7 +22,7 @@ function Header({ isAuthenticated }) {
 						<i className="icon__menu" aria-hidden="true"></i>
 					</label>
 					{
-						isAuthenticated ? <NavigationAuth /> : <NavigationPublic />
+						authenticated ? <NavigationAuth /> : <NavigationPublic />
 					}
 				</div>
 			</div>
